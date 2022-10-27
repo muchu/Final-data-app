@@ -4,14 +4,14 @@ import matplotlib
 import streamlit as st
 
 st.set_page_config(
-    page_title="Hello",
+    page_title="Hello Page",
     page_icon="👋",
 )
 data_depo = json.load(open("../Final-data-app/archive/deposit.json"))
 df3 = pd.read_csv('../Final-data-app/archive/terra-luna.csv')
 df5 = pd.read_csv('../Final-data-app/archive/ethereum.csv')
 
-str_discription1 = '''
+str_description1 = '''
 ##### 1 Data from https://www.kaggle.com/datasets/avanawallet/crypto-price-data-during-terra-luna-crash provide by AvanaWallet
 
 >The collapse of Terra Luna and Terra USD (UST) shocked the broader cryptocurrency and financial markets. The aggregate market capitalization of large-cap cryptocurrencies dropped several hundreds of billions dollars in a matter of a week. Avana Wallet has aggregated 15-minute interval price data for stablecoins (US dollar pegs) and large-cap cryptocurrencies for you to analyze. The data span between 5/6/2022 and 5/17/2022, which captures the entire episode.
@@ -39,8 +39,8 @@ str_discription1 = '''
 >DAI (dai.csv)
 >Tether USDT (tether.csv)
 >USD Coin UDSC (usd-coin.csv)'''
-str_discription2 = '##### 2 The data crawled from here https://app.anchorprotocol.com/'
-str_discription3 = '''
+str_description2 = '##### 2 The data crawled from here https://app.anchorprotocol.com/'
+str_description3 = '''
 ##### 1 Data from https://www.kaggle.com/datasets/programmerrdai/terra-came-back-to-the-ground provide by hrterhrter
 
 >I have used alot of Kaggle Datasets and I want to help the community also. So I hope this helps at least one person.  
@@ -54,7 +54,7 @@ st.header("Data we used: ")
 tab1, tab2, tab3 = st.tabs(["Data used 1", "Data used 2", "Data used 3"])
 
 with tab1:
-   st.markdown(str_discription1)
+   st.markdown(str_description1)
    col1, col2 = st.columns(2)
 
 with col1:
@@ -66,8 +66,8 @@ with col2:
 
 
 with tab2:
-   st.markdown(str_discription2)
+   st.markdown(str_description2)
    st.json(data_depo)
 
 with tab3:
-   st.markdown(str_discription3)
+   st.markdown(str_description3)
