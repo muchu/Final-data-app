@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 plt.style.use('seaborn')
 
-df1 = pd.read_csv('D:/resource/MISY225/my-streamlit/Final-data-app/archive/Terra.csv')
+df1 = pd.read_csv('../Final-data-app/archive/Terra.csv')
 fig,ax = plt.subplots()
 df1.Volume.plot(label = 'Volumn',linestyle='solid',color='blue')
 ax.set_ylabel('Daily volumn')

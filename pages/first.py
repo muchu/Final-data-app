@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 plt.style.use('seaborn')
 
-df1 = pd.read_csv('D:/resource/MISY225/my-streamlit/Final-data-app/archive/Terra.csv')
-df2 = pd.read_csv('D:/resource/MISY225/my-streamlit/Final-data-app/archive/terrausd.csv')
-df3 = pd.read_csv('D:/resource/MISY225/my-streamlit/Final-data-app/archive/terra-luna.csv')
-df4 = pd.read_csv('D:/resource/MISY225/my-streamlit/Final-data-app/archive/bitcoin.csv')
-df5 = pd.read_csv('D:/resource/MISY225/my-streamlit/Final-data-app/archive/ethereum.csv')
+df1 = pd.read_csv('../Final-data-app/archive/Terra.csv')
+df2 = pd.read_csv('../Final-data-app/archive/terrausd.csv')
+df3 = pd.read_csv('../Final-data-app/archive/terra-luna.csv')
+df4 = pd.read_csv('../Final-data-app/archive/bitcoin.csv')
+df5 = pd.read_csv('../Final-data-app/archive/ethereum.csv')
 
 #1:全部的luna币价格波动
 from matplotlib.lines import lineStyles
