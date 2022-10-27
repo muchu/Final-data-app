@@ -4,4 +4,4 @@ matplotlib
 json
 numpy
 datetime
-plotly.graph_objects
+plotly
