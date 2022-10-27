@@ -1,7 +1,6 @@
 pandas
 streamlit
 matplotlib
-json
 numpy
 datetime
 plotly
