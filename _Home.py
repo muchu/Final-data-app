@@ -45,8 +45,8 @@ str_description3 = '''
 >The data has been taken from https://finance.yahoo.com/  
 >I will update as frequently as possible.  '''
    
-df3 = pd.read_csv('../Final-data-app/archive/terra-luna.csv')
-df5 = pd.read_csv('../Final-data-app/archive/ethereum.csv')
+df3 = pd.read_csv(open('../Final-data-app/archive/terra-luna.csv'))
+df5 = pd.read_csv(open('../Final-data-app/archive/ethereum.csv'))
 data_depo = json.load(open("../Final-data-app/archive/deposit.json"))
 
 
