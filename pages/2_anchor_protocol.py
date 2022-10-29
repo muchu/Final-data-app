@@ -4,11 +4,17 @@ import json
 import plotly.graph_objects as go
 import streamlit as st
 import datetime
-from utils import read_all_data
+
+
+@st.cache
+def read_data_second():
+    data_depo = json.load(open("../Final-data-app/archive/deposit.json"))
+    data_borrow = json.load(open("../Final-data-app/archive/borrow.json"))
+    return data_depo, data_borrow
 
 
 
-data_depo, data_borrow = read_all_data.read_data_second()
+data_depo, data_borrow = read_data_second()
 
 # handle data type
 timestamp_depo = [item['timestamp']/1000 for item in data_depo['total_ust_deposits']]
