@@ -6,15 +6,10 @@ import streamlit as st
 import datetime
 
 
-@st.cache
-def read_data_second():
-    data_depo = json.load(open("../Final-data-app/archive/deposit.json"))
-    data_borrow = json.load(open("../Final-data-app/archive/borrow.json"))
-    return data_depo, data_borrow
 
+data_depo = json.load(open("../Final-data-app/archive/deposit.json"))
+data_borrow = json.load(open("../Final-data-app/archive/borrow.json"))
 
-
-data_depo, data_borrow = read_data_second()
 
 # handle data type
 timestamp_depo = [item['timestamp']/1000 for item in data_depo['total_ust_deposits']]
