@@ -6,7 +6,7 @@ import numpy as np
 
 
 
-df1 = pd.read_csv(open('../Final-data-app/archive/Terra.csv'))
+df1 = pd.read_csv(open('./archive/Terra.csv'))
 
 plt.style.use('seaborn')
 

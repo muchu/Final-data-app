@@ -7,8 +7,8 @@ import datetime
 
 
 
-data_depo = json.load(open("../Final-data-app/archive/deposit.json"))
-data_borrow = json.load(open("../Final-data-app/archive/borrow.json"))
+data_depo = json.load(open("./archive/deposit.json"))
+data_borrow = json.load(open("./archive/borrow.json"))
 
 
 # handle data type

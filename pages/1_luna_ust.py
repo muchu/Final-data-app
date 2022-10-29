@@ -5,11 +5,11 @@ import numpy as np
 
 
 
-df1 = pd.read_csv(open('../Final-data-app/archive/Terra.csv'))
-df2 = pd.read_csv(open('../Final-data-app/archive/terrausd.csv'))
-df3 = pd.read_csv(open('../Final-data-app/archive/terra-luna.csv'))
-df4 = pd.read_csv(open('../Final-data-app/archive/bitcoin.csv'))
-df5 = pd.read_csv(open('../Final-data-app/archive/ethereum.csv'))
+df1 = pd.read_csv(open('./archive/Terra.csv'))
+df2 = pd.read_csv(open('./archive/terrausd.csv'))
+df3 = pd.read_csv(open('./archive/terra-luna.csv'))
+df4 = pd.read_csv(open('./archive/bitcoin.csv'))
+df5 = pd.read_csv(open('./archive/ethereum.csv'))
 
 
 plt.style.use('seaborn')
