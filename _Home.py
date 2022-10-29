@@ -44,10 +44,12 @@ str_description3 = '''
 >This is data from the oldest terra price. :)  
 >The data has been taken from https://finance.yahoo.com/  
 >I will update as frequently as possible.  '''
-   
-df3 = pd.read_csv(open('../Final-data-app/archive/terra-luna.csv'))
-df5 = pd.read_csv(open('../Final-data-app/archive/ethereum.csv'))
-data_depo = json.load(open("../Final-data-app/archive/deposit.json"))
+with open('../Final-data-app/archive/terra-luna.csv') as df3_data:
+   df3 = pd.read_csv(df3_data)
+with open('../Final-data-app/archive/ethereum.csv') as df5_data:
+   df5 = pd.read_csv(df5_data)
+with open("../Final-data-app/archive/deposit.json") as depo_json:
+   data_depo = json.load(depo_json)
 
 
 st.header("Data we used: ")
