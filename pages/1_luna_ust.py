@@ -1,3 +1,4 @@
+from turtle import color
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -19,7 +20,7 @@ from matplotlib.lines import lineStyles
 from matplotlib.pyplot import title
 
 
-st.subheader('The daily closing price of a luna coin from the date of issue to the crash')
+st.header('The daily closing price of a luna coin from the date of issue to the crash')
 fig,ax = plt.subplots()
 df1.Close.plot(label = 'close price',linestyle='solid',color='blue')
 ax.set_ylabel('Daily closing price($)')
@@ -30,7 +31,7 @@ st.pyplot(fig)
 
 
 #2：5月份两张图
-st.subheader('The daily price of luna and USD during the crash')
+st.header('The daily price of luna and USD during the crash')
 
 fig,ax = plt.subplots(2,1,figsize=[10,15])
 price_2 = df2.iloc[2:len(df3):10,2: ]
@@ -70,9 +71,9 @@ luna =[df3.price[1],df3.price[60],df3.price[160]]
 if level == 'BTC':  
    
    width = 0.08 # 柱子的宽度
-   ax.bar(x - width,luna, width, label='luna')
-   ax.bar(x , ETH, width, label='ETH')
-   ax.bar(x + width, BTC, width, label='BTC')
+   ax.bar(x - width,luna, width, label='luna',color="#ab594b")
+   ax.bar(x , ETH, width, label='ETH',color="#86a9c1")
+   ax.bar(x + width, BTC, width, label='BTC',color="#cfb37e")
 
    ax.set_ylabel('price($)')
    ax.set_title('luna & BTC')
@@ -83,8 +84,8 @@ if level == 'BTC':
 else:
    width = 0.08
 
-   ax.bar(x - width/2, luna, width, label='luna')
-   ax.bar(x + width/2, ETH, width, label='ETH')
+   ax.bar(x - width/2, luna, width, label='luna',color="#2a5e82")
+   ax.bar(x + width/2, ETH, width, label='ETH',color="#86a9c1")
    ax.set_ylabel('price($)')
    ax.set_title('luna & BTC')
    plt.xticks(x, labels=labels)

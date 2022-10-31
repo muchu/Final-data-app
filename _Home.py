@@ -51,9 +51,20 @@ data_depo = json.load(open("./archive/deposit.json"))
 
 
 st.header("Data we used: ")
-tab1, tab2, tab3 = st.tabs(["Data used 1", "Data used 2", "Data used 3"])
+tab1, tab2, tab3,tab4 = st.tabs(['About Us',"Data set used 1", "Data set used 2", "Data set used 3"])
 
 with tab1:
+   col1_1, col1_2 = st.columns(2)
+   with col1_1:
+      container1 = st.container()
+      container1.image('./archive/无语伯.jpg',caption="勇敢地做一个懒惰的人吧！")
+      container1.write("        Xinyan Zhao")
+   with col1_2:
+      container2 = st.container()
+      container2.image('./archive/拉女士.jpg',caption="zici左边!")
+      container2.write("        Xinrui Pan")
+      
+with tab2:
    st.markdown(str_description1)
    col1, col2 = st.columns(2)
 
@@ -65,11 +76,11 @@ with col2:
    st.dataframe(df5)
 
 
-with tab2:
+with tab3:
    st.markdown(str_description2)
    st.json(data_depo)
 
-with tab3:
+with tab4:
    st.markdown(str_description3)
 
 
