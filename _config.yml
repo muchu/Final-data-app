@@ -1,6 +1,6 @@
-remote_theme: pages-themes/hacker@v0.2.0
+remote_theme: pages-themes/modernist@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
-title: Final project of \#23
-description: this is the webpage of \#23 final data app
+title: Final project of group 23
+description: this is the webpage of group 23 final data app
 show_downloads: ['true']
