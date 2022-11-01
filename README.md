@@ -11,15 +11,16 @@ The nearest burst of bubble is Luna which issued by Terra , our team member are 
 1. Why did Luna crash?
 2. why a bank run on anchor contributes to Luna's crash?
 
-- ### Name used in our project
+- ### Name used in our project  
+
 **Luna**  
-a virtual currency launched by Terra in 2019  
+a virtual currency launched by Terra in 2019    
 
 **UST**  
-Terra launched Luna at the same time as its exclusive stablecoin, called UST.  
+Terra launched Luna at the same time as its exclusive stablecoin, called UST.    
 
 **Anchor Protocol**  
-You can treat it as a bank, you will get 20% interest rate if you deposit your ust in it.
+You can treat it as a bank, you will get 20% interest rate if you deposit your ust in it.  
 
 
 
@@ -59,5 +60,6 @@ You can treat it as a bank, you will get 20% interest rate if you deposit your u
 >I will update as frequently as possible.  '''
 
 - ### Team Member
- **Xinyan Zhao**
+ **Xinyan Zhao**  
+ 
  **Xinrui Pan**
