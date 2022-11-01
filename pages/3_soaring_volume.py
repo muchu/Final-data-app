@@ -10,6 +10,9 @@ df1 = pd.read_csv(open('./archive/Terra.csv'))
 
 plt.style.use('seaborn')
 
+st.header('The volume of luna from the date of issue to the crash')
+fig,ax = plt.subplots()
+
 fig,ax = plt.subplots()
 df1.Volume.plot(label = 'Volumn',linestyle='solid',color='blue')
 ax.set_ylabel('Daily volumn')
