@@ -6,6 +6,7 @@ import numpy as np
 
 
 
+
 df1 = pd.read_csv(open('./archive/Terra.csv'))
 df2 = pd.read_csv(open('./archive/terrausd.csv'))
 df3 = pd.read_csv(open('./archive/terra-luna.csv'))
@@ -16,8 +17,7 @@ df5 = pd.read_csv(open('./archive/ethereum.csv'))
 plt.style.use('seaborn')
 
 #1:全部的luna币价格波动
-from matplotlib.lines import lineStyles
-from matplotlib.pyplot import title
+
 
 
 st.header('The daily closing price of a luna coin from the date of issue to the crash')
