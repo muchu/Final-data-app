@@ -48,7 +48,7 @@ ax[1].set_ylabel('Daily price($)')
 ax[0].legend()
 ax[1].legend()
 
-ax[0].set_title(' ave daily price($) of USD',fontsize=15,color='r')
+ax[0].set_title(' ave daily price($) of UST',fontsize=15,color='r')
 ax[1].set_title(' ave daily price($) of luna',fontsize=15,color='r')
 st.pyplot(fig)
 
