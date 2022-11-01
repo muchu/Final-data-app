@@ -11,12 +11,12 @@ The nearest burst of bubble is Luna which issued by Terra , our team member are 
 1. Why did Luna crash?
 2. why a bank run on anchor contributes to Luna's crash?
 
-- ### Name used in our project  
+- ### Proper nouns used in our project  
 
 **Luna**  
-a virtual currency launched by Terra in 2019    
+A virtual currency launched by Terra in 2019    
 
-**UST**  
+**UST**    
 Terra launched Luna at the same time as its exclusive stablecoin, called UST.    
 
 **Anchor Protocol**  
