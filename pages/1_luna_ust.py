@@ -31,13 +31,13 @@ st.pyplot(fig)
 
 
 #2：5月份两张图
-st.header('The daily price of luna and USD during the crash')
+st.header('The daily price of luna and UST during the crash')
 
 fig,ax = plt.subplots(2,1,figsize=[10,15])
 price_2 = df2.iloc[2:len(df3):10,2: ]
 price_3 = df3.iloc[2:len(df3):10,2: ]
 
-price_2.plot(ax = ax[0],label='usd', linestyle = 'dashed',  color = 'blue')
+price_2.plot(ax = ax[0],label='ust', linestyle = 'dashed',  color = 'blue')
 
 price_3.plot(ax = ax[1],label='luna', linestyle = 'dashed',  color = 'blue')
 
