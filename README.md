@@ -7,11 +7,11 @@ Cryptocurrency market is mystery and risky for people, many of them almost loss 
 The nearest burst of bubble is Luna which issued by Terra , our team member are curiouse about the reason behind the crash.  
 
 
-### Our question
+- ### Our question
 1. Why did Luna crash?
 2. why a bank run on anchor contributes to Luna's crash?
 
-### Name used in our project
+- ### Name used in our project
 **Luna**  
 a virtual currency launched by Terra in 2019  
 
@@ -23,7 +23,7 @@ You can treat it as a bank, you will get 20% interest rate if you deposit your u
 
 
 
-### Data we used
+- ### Data we used
 1. Data from https://www.kaggle.com/datasets/avanawallet/crypto-price-data-during-terra-luna-crash provide by AvanaWallet
 >The collapse of Terra Luna and Terra USD (UST) shocked the broader cryptocurrency and financial markets. The aggregate market capitalization of large-cap cryptocurrencies dropped several hundreds of billions dollars in a matter of a week. Avana Wallet has aggregated 15-minute interval price data for stablecoins (US dollar pegs) and large-cap cryptocurrencies for you to analyze. The data span between 5/6/2022 and 5/17/2022, which captures the entire episode.
 >
@@ -58,6 +58,6 @@ You can treat it as a bank, you will get 20% interest rate if you deposit your u
 >The data has been taken from https://finance.yahoo.com/  
 >I will update as frequently as possible.  '''
 
-### Team Member
+- ### Team Member
  **Xinyan Zhao**
  **Xinrui Pan**
