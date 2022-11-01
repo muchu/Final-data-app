@@ -46,14 +46,15 @@ borw = borw[borw['timestamp'] <= input_stampe.timestamp()]
 print(len(depo))
 # plot
 fig = go.Figure()
-fig.add_trace(go.Line(x=depo['time'], y=depo['deposit'], name='Deposit'))
-fig.add_trace(go.Line(x=borw['time'], y=borw['total_borrowed'], name='Borrow'))
+fig.add_trace(go.Line(x=depo['time'], y=depo['deposit'], name='Deposit',marker=dict(color = "#466b82")))
+fig.add_trace(go.Line(x=borw['time'], y=borw['total_borrowed'], name='Borrow',marker=dict(color = "#ecc043")))
 fig.update_layout(
     autosize=False,
     width=800,
     height=600,
+    paper_bgcolor="#f4f3f4",
+    plot_bgcolor="#efedee"
 )
-
 st.plotly_chart(fig)
 
 diff = depo['deposit']-borw['total_borrowed']
@@ -65,6 +66,7 @@ option_dict = {'Max': max_diff, "Min": min_diff}
 labels = ['Deposit', 'Borrow']
 values = [depo.iloc[option_dict[option_ratio]]['deposit'],
           borw.iloc[option_dict[option_ratio]]['total_borrowed']]
-fig_pie = go.Figure(data=[go.Pie(labels=labels, values=values)])
+fig_pie = go.Figure(data=[go.Pie(labels=labels, values=values,marker=dict(colors=["#466b82","#ecc043"], line=dict(color='#000000', width=2)))])
+
 print(values)
 st.plotly_chart(fig_pie)
