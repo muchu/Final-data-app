@@ -5,6 +5,10 @@ import plotly.graph_objects as go
 import streamlit as st
 import datetime
 
+st.set_page_config(
+    page_title="Anchor Page",
+    page_icon="🏦",
+)
 
 data_depo = json.load(open("./archive/deposit.json"))
 data_borrow = json.load(open("./archive/borrow.json"))
@@ -31,7 +35,7 @@ borw['total_borrowed'] = list(reversed(totoal_borrow))
 borw['time'] = pd.to_datetime(list(reversed(timestamp_borrow)), unit='s')
 borw['timestamp'] = list(reversed(timestamp_borrow))
 
-st.header("Deposit and Borrow of Anchor Protocol")
+st.header("🏦 Deposit and Borrow of Anchor Protocol")
 option_ratio = st.sidebar.radio('what you want: ', ('Max', 'Min'))
 
 date_input = st.date_input(

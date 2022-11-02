@@ -3,6 +3,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+st.set_page_config(
+    page_title="Luna & UST Page",
+    page_icon="🪙",
+)
+
 
 df1 = pd.read_csv(open('./archive/Terra.csv'))
 df2 = pd.read_csv(open('./archive/terrausd.csv'))
@@ -17,7 +22,7 @@ plt.style.use('seaborn')
 
 
 st.header(
-    'The daily closing price of a luna coin from the date of issue to the crash')
+    '🪙 The daily closing price of a luna coin from the date of issue to the crash')
 fig, ax = plt.subplots()
 df1.Close.plot(label='close price', linestyle='solid', color='blue')
 ax.set_ylabel('Daily closing price($)')
