@@ -50,7 +50,7 @@ df5 = pd.read_csv(open("./archive/ethereum.csv"))
 data_depo = json.load(open("./archive/deposit.json"))
 
 
-st.header("Introduction of our project: ")
+st.header("The Crash of Terra Luna")
 tab1, tab2, tab3, tab4 = st.tabs(
     ['About Us', "Data set used 1", "Data set used 2", "Data set used 3"])
 
