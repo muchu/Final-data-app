@@ -5,7 +5,7 @@ import streamlit as st
 
 
 st.set_page_config(
-    page_title="Hello Page",
+    page_title="Introduction Page",
     page_icon="👋",
 )
 
@@ -44,43 +44,42 @@ str_description3 = '''
 >This is data from the oldest terra price. :)  
 >The data has been taken from https://finance.yahoo.com/  
 >I will update as frequently as possible.  '''
-   
+
 df3 = pd.read_csv(open("./archive/terra-luna.csv"))
 df5 = pd.read_csv(open("./archive/ethereum.csv"))
 data_depo = json.load(open("./archive/deposit.json"))
 
 
-st.header("Data we used: ")
-tab1, tab2, tab3,tab4 = st.tabs(['About Us',"Data set used 1", "Data set used 2", "Data set used 3"])
+st.header("Introduction of our project: ")
+tab1, tab2, tab3, tab4 = st.tabs(
+    ['About Us', "Data set used 1", "Data set used 2", "Data set used 3"])
 
 with tab1:
-   col1_1, col1_2 = st.columns(2)
-   with col1_1:
-      container1 = st.container()
-      container1.image('./archive/无语伯.jpg',caption="勇敢地做一个懒惰的人吧！")
-      container1.write("        Xinyan Zhao")
-   with col1_2:
-      container2 = st.container()
-      container2.image('./archive/拉女士.jpg',caption="zici左边!")
-      container2.write("        Xinrui Pan")
-      
+    col1_1, col1_2 = st.columns(2)
+    with col1_1:
+        container1 = st.container()
+        container1.image('./archive/无语伯.jpg', caption="勇敢地做一个懒惰的人吧！")
+        container1.subheader("    Xinyan Zhao")
+    with col1_2:
+        container2 = st.container()
+        container2.image('./archive/拉女士.jpg', caption="zici左边!")
+        container2.subheader("    Xinrui Pan")
+
 with tab2:
-   st.markdown(str_description1)
-   col1, col2 = st.columns(2)
+    st.markdown(str_description1)
+    col1, col2 = st.columns(2)
 
 with col1:
-   st.write("terra-luna.csv")
-   st.dataframe(df3)
+    st.write("terra-luna.csv")
+    st.dataframe(df3)
 with col2:
-   st.write("ethereum.csv")
-   st.dataframe(df5)
+    st.write("ethereum.csv")
+    st.dataframe(df5)
 
 
 with tab3:
-   st.markdown(str_description2)
-   st.json(data_depo)
+    st.markdown(str_description2)
+    st.json(data_depo)
 
 with tab4:
-   st.markdown(str_description3)
-
-
+    st.markdown(str_description3)
