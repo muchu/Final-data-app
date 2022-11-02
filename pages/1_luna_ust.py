@@ -24,7 +24,7 @@ fig,ax = plt.subplots()
 df1.Close.plot(label = 'close price',linestyle='solid',color='blue')
 ax.set_ylabel('Daily closing price($)')
 ax.legend()
-ax.set_title('daily closing price($) of crypto luna',fontsize=15,color='r')
+ax.set_title('Daily closing price($) of crypto luna',fontsize=15,color='595959')
 ax.set_xlabel('Cumulative days of issue')
 st.pyplot(fig)
 
@@ -47,8 +47,8 @@ ax[1].set_ylabel('Daily price($)')
 ax[0].legend()
 ax[1].legend()
 
-ax[0].set_title(' ave daily price($) of UST',fontsize=15,color='r')
-ax[1].set_title(' ave daily price($) of luna',fontsize=15,color='r')
+ax[0].set_title(' Ave daily price($) of UST',fontsize=15,color='595959')
+ax[1].set_title(' Ave daily price($) of luna',fontsize=15,color='595959')
 st.pyplot(fig)
 
 #3：不同币的价格对比（在第三步里）
