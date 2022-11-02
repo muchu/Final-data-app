@@ -40,7 +40,7 @@ borw['total_borrowed'] = list(reversed(totoal_borrow))
 borw['time'] = pd.to_datetime(list(reversed(timestamp_borrow)), unit='s')
 borw['timestamp'] = list(reversed(timestamp_borrow))
 
-tab1, tab2 = st.tabs(['🔍Volume',"🔍Correlationship"])
+tab1, tab2 = st.tabs(['🔍Volume',"🔍Correlation"])
 with tab1:
     plt.style.use('seaborn')
 
@@ -65,6 +65,6 @@ with tab2:
         }
     )
     corr = correlation_price.corr()
-    st.header('📉 Correlationship overviews')
+    st.header('📉 Correlation overviews')
 
     st.dataframe(corr)
