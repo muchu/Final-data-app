@@ -24,9 +24,10 @@ fig,ax = plt.subplots()
 df1.Close.plot(label = 'close price',linestyle='solid',color='blue')
 ax.set_ylabel('Daily closing price($)')
 ax.legend()
-ax.set_title('Daily closing price($) of crypto luna',fontsize=15,color='595959')
+ax.set_title('Daily closing price($) of crypto luna',fontsize=15,color='#595959')
 ax.set_xlabel('Cumulative days of issue')
 st.pyplot(fig)
+st.write('Luna maintained a good development trend until it suffered an extremely fast crash in May this year')
 
 
 #2：5月份两张图
@@ -47,14 +48,18 @@ ax[1].set_ylabel('Daily price($)')
 ax[0].legend()
 ax[1].legend()
 
-ax[0].set_title(' Ave daily price($) of UST',fontsize=15,color='595959')
-ax[1].set_title(' Ave daily price($) of luna',fontsize=15,color='595959')
+ax[0].set_title(' Ave daily price($) of UST',fontsize=15,color='#595959')
+ax[1].set_title(' Ave daily price($) of luna',fontsize=15,color='#595959')
 st.pyplot(fig)
+
+st.write('Ideally,as the link between Luna and dollar, the value of UST would stabilize at around $1 each unit.\n ')
+st.write('However, by collecting the price data of Luna and UST in May, it is not difficult to find that the price of UST has fallen to well below $1')
+st.write('The breakage of the link will naturally cause the peice of Luna to be greatly affected.')
 
 #3：不同币的价格对比（在第三步里）
 
 
-st.subheader('Please click the left buttons for interaction')
+st.subheader('Huge price gaps between different virtual currencies')
 level = st.sidebar.radio(
     "Select the type of currency",
     ('ETH', 'BTC'))
@@ -90,6 +95,8 @@ else:
    plt.xticks(x, labels=labels)
    ax.legend()
    st.pyplot(fig)
+
+   st.write('There is a huge price gap between different virtual currencies. Please click the interactive button on the left to learn more.')
 
 
 

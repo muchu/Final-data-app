@@ -14,6 +14,7 @@ data_depo = json.load(open("./archive/deposit.json"))
 data_borrow = json.load(open("./archive/borrow.json"))
 
 
+
 # handle data type
 timestamp_depo = [item['timestamp'] /
                   1000 for item in data_depo['total_ust_deposits']]
@@ -61,6 +62,11 @@ fig.update_layout(
 )
 st.plotly_chart(fig)
 
+st.write('The main way banks get their benefits is through interest on loans and reinvested of stored funds,and the same is trus for Anchor Protocol')
+st.write('But as seen from the deposit-to-loan ratio,deposits are much larger than loans,which makes it difficult to afford the high interest rates of  Anchor Protocol (20%,much more higher than other banks).')
+st.write('Eventually, on May 9 of this year, a run on the "bank" led by the capital giants took place.A large number of deposits were withdrawn, causing deposits to fall off a cliff.')
+
+
 diff = depo['deposit']-borw['total_borrowed']
 
 max_diff = diff.idxmax()
@@ -74,3 +80,6 @@ fig_pie = go.Figure(data=[go.Pie(labels=labels, values=values,marker=dict(colors
 
 print(values)
 st.plotly_chart(fig_pie)
+
+st.write('This pie chart shows the maximum and minimum proportions of borrowings and deposits over different time periods.')
+st.write('Please use the left interactive button and the top date interactive button to operate.')

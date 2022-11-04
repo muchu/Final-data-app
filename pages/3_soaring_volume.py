@@ -52,6 +52,8 @@ with tab1:
     ax.legend()
     ax.set_title('Daily volumn of crypto luna', fontsize=15, color='#595959')
     st.pyplot(fig)
+    st.write('A large number of depositors took out USTs from the "bank", causing the number of USTs to surge and the price to crash, and they all wanted to exchange their USTs for Luna to hedge their risks. ')
+    st.write('Luna went down the same path as USTs, soaring in volume, plummeting in price, and the death spiral began.')
 with tab2:
     correlation_price = pd.DataFrame(
     data={
