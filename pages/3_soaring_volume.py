@@ -40,7 +40,7 @@ borw['total_borrowed'] = list(reversed(totoal_borrow))
 borw['time'] = pd.to_datetime(list(reversed(timestamp_borrow)), unit='s')
 borw['timestamp'] = list(reversed(timestamp_borrow))
 
-tab1, tab2 = st.tabs(['🔍Volume',"🔍Correlation"])
+tab1, tab2,tab3 = st.tabs(['🔍Volume',"🔍Correlation","🔍Analysis"])
 with tab1:
     plt.style.use('seaborn')
 
@@ -70,3 +70,11 @@ with tab2:
     st.header('📉 Correlation overviews')
 
     st.dataframe(corr)
+
+with tab3:
+    st.write('A large number of deposits were withdrawn, and a run occurred.')
+    st.write('There are a lot of UST on the market.')
+    st.write('UST prices fell (supply and demand) below $1.')
+    st.write('Luna price drop.')
+    st.write('UST prices remain below $1 and luna supplies continue to increase.')
+    st.write('A death spiral finally formed.')
