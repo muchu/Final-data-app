@@ -1,6 +1,7 @@
 # Final data app  
 
 ## Introduction of our project  
+you can find our Data app by clicking  [here](https://muchu-final-data-app--home-ieo82h.streamlitapp.com/).
 
 - ### Why we choose this topic?  
 Cryptocurrency market is mystery and risky for people, many of them almost loss everything overnight. To protect majority of people, our country ban the trading of cryptocurrency and announce that is illegal in China.    
@@ -59,7 +60,12 @@ You can treat it as a bank, you will get 20% interest rate if you deposit your U
 >The data has been taken from https://finance.yahoo.com/  
 >I will update as frequently as possible.  '''
 
+- ### Preview of Data app
+
 - ### Team Member
- **Xinyan Zhao**    
- 
- **Xinrui Pan**
+
+**Xinyan Zhao** 
+<img src="../Final-data-app/archive/无语伯.jpg" width = "30%" height="30%">
+
+**Xinrui Pan**  
+<img src="../Final-data-app/archive/拉女士.jpg" width = "30%">
