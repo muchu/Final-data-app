@@ -51,6 +51,7 @@ data_depo = json.load(open("./archive/deposit.json"))
 
 
 st.header("The Crash of Terra Luna")
+st.markdown("Github Page click [here](https://muchu.github.io/Final-data-app/)")
 tab1, tab2, tab3, tab4 = st.tabs(
     ['About Us', "Data set used 1", "Data set used 2", "Data set used 3"])
 
