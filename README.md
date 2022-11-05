@@ -64,7 +64,7 @@ You can treat it as a bank, you will get 20% interest rate if you deposit your U
 
 - ### Team Member
 
-**Xinyan Zhao** 
+**Xinyan Zhao**  
 <img src="../Final-data-app/archive/无语伯.jpg" width = "30%" height="30%">  
 
 **Xinrui Pan**  
